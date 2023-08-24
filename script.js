@@ -49,5 +49,12 @@ function generatePassword() {
     }
   }
 
+  // for each desired password character:
+  // - pick a type of character
+  // - pick a character matching that type
+  // - append that character to the result string
+  // in the long term i would probably opt to overload the generatePassword function with one that accepts the necessary arguments
+  // i will not be doing that here because this does not need to work in the long term, and i value my time
+
   return result;
 }
