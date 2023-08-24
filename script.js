@@ -26,7 +26,28 @@ function generatePassword() {
     return "Invalid password length: " + passLength;
   }
 
+  let charTypes = {
+    lowercase: true,
+    uppercase: false,
+    numeric: false,
+    special: false,
+  };
+
+  for (rule in charTypes) {
+    const userPref = prompt(
+      "(true/false) Would you like your password to include the following character type: " +
+        rule,
+      charTypes[rule]
+    );
+    if (typeof userPref === "boolean") {
+      charTypes[rule] = userPref;
+    } else {
+      alert(
+        "Invalid (non-boolean) response, using default value: " +
+          charTypes[rule]
+      );
+    }
+  }
+
   return result;
 }
-
-function promptInclude(charType) {}
