@@ -34,20 +34,6 @@ function generatePassword() {
   };
 
   for (rule in charTypes) {
-    // const userPref = prompt(
-    //   "(true/false) Would you like your password to include the following character type: " +
-    //     rule +
-    //     "?",
-    //   charTypes[rule]
-    // );
-    // if (typeof userPref === "boolean") {
-    //   charTypes[rule] = userPref;
-    // } else {
-    //   alert(
-    //     "Invalid (non-boolean) response, using default value: " +
-    //       charTypes[rule]
-    //   );
-    // }
     const userPref = confirm(
       `current rule for inclusion of ${rule} characters is ${charTypes[rule]}.
       click "OK" to toggle this rule or "cancel" to keep current value`
@@ -92,12 +78,3 @@ function generatePassword() {
 
   return result;
 }
-
-// function chooseCharacter(charTypes) {
-//   const charSets = {
-//     lowercase: "abcdefghijklmnopqrstuvwxyz",
-//     uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-//     numeric: "0123456789",
-//     special: " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~",
-//   };
-// }
