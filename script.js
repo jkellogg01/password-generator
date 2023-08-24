@@ -12,7 +12,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// TODO: Write thr function generatePassword() to:
+// TODO: Write the function generatePassword() to:
 // - prompt for password criteria
 // - return a string password
 
