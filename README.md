@@ -1,10 +1,10 @@
 # Password Generator
 
----
-
 ## Description
 
 The goal of this project was to, given a mostly-functional front-end site, write the code to prompt the user for parameters under which to generate a password and then to generate said password.
+
+![A screencap of the site](./site-screencap.png)
 
 ## Usage
 
